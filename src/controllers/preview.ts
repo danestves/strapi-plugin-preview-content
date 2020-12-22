@@ -63,7 +63,8 @@ module.exports = {
    * @param ctx
    */
   async createOrUpdate(ctx: Context) {
-    const data = ctx.body;
+    // @ts-ignore
+    const data = ctx.request.body;
     // @ts-ignore
     const results = await strapi
       .query("plugins::preview-content.settings")
