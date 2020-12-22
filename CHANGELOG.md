@@ -10,11 +10,21 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 - `removed`: for deprecated features removed in this release
 - `fixed`: for any bug fixes
 
+## [0.2.2] - 2020-12-22
+
+### Added
+
+- Support for clone entry with preview [[6149cf5](https://github.com/danestves/strapi-plugin-preview-content/commit/6149cf5)] [[4a081b7](https://github.com/danestves/strapi-plugin-preview-content/commit/4a081b7)]
+
+### Fixed
+
+- Change all `strapi.notification.config()` to `strapi.notification.toggle()` [[4a081b7](https://github.com/danestves/strapi-plugin-preview-content/commit/4a081b7)]
+
 ## [0.1.4] - 2020-12-22
 
 ### Changed
 
-- Notifications settings to use `.toggle()`, see [strapi api](https://strapi.io/documentation/developer-docs/latest/plugin-development/frontend-development.html#api) for more information [[e066cac](https://github.com/danestves/strapi-plugin-preview-content/commit/e066cac)]
+- Notifications settings to use `.config()`, see [strapi api](https://strapi.io/documentation/developer-docs/latest/plugin-development/frontend-development.html#api) for more information [[e066cac](https://github.com/danestves/strapi-plugin-preview-content/commit/e066cac)]
 
 ## [0.1.3] - 2020-12-21
 
