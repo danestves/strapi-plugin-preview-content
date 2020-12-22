@@ -151,7 +151,7 @@ export const PreviewProvider = ({
       // Show the loading state
       setButtonLoading(true);
       const clonedPayload = await request(getRequestUrl(slug), {
-        method: "POST",
+        method: "GET",
         body: {
           ...initialData,
           cloneOf: initialData.id,
@@ -296,9 +296,9 @@ function prepareToPublish(payload) {
 }
 
 const getRequestUrl = (path) =>
-  `/${CONTENT_MANAGER_PLUGIN_ID}/explorer/${path}`;
+  `/${CONTENT_MANAGER_PLUGIN_ID}/collection-types/${path}/${id}`;
 const getFrontendEntityUrl = (path, id) =>
-  `/admin/plugins/${CONTENT_MANAGER_PLUGIN_ID}/collectionType/${path}/${id}`;
+  `/admin/plugins/${CONTENT_MANAGER_PLUGIN_ID}/collectionType/${path}/create/clone/${id}`;
 
 const getPreviewPluginTrad = (id) => `preview-content.${id}`;
 
