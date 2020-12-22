@@ -111,12 +111,17 @@ module.exports = {
    *
    * @returns The preview URL parsed with `replacePreviewParams()`
    */
-  getPreviewUrl(
+  async getPreviewUrl(
     contentType: string,
     contentId: string,
     _query: Record<string, string | number>
   ) {
-    const previewUrl = global.strapi.config.get("custom.previewUrl") || "";
+    // @ts-ignore
+    const results = await strapi
+      .query("plugins::preview-content.settings")
+      .find({ _limit: 1 });
+    const entity: any = _.first(results) || null;
+    const previewUrl = entity.baseUrl || "";
 
     return this.replacePreviewParams(contentType, contentId, previewUrl);
   },
