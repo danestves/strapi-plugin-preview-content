@@ -47,13 +47,13 @@ module.exports = {
    *
    * @returns eturns the object containing the preview url, otherwise null.
    */
-  getPreviewUrl(ctx: Context) {
+  async getPreviewUrl(ctx: Context) {
     const {
       params: { contentType, id },
       query,
     } = ctx;
     const service = global.strapi.plugins["preview-content"].services.preview;
-    const url = service.getPreviewUrl(contentType, id, query);
+    const url = await service.getPreviewUrl(contentType, id, query);
 
     ctx.send({ url: url || "" });
   },

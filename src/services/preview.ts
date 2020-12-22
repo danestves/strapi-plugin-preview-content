@@ -123,9 +123,13 @@ module.exports = {
       .query("plugins::preview-content.settings")
       .find({ _limit: 1 });
     const entity: any = _.first(results) || null;
-    console.log(entity);
 
     const previewUrl = entity.baseUrl || "";
+    console.log({ entity });
+    console.log({ previewUrl });
+    console.log({
+      url: this.replacePreviewParams(contentType, contentId, previewUrl),
+    });
 
     return this.replacePreviewParams(contentType, contentId, previewUrl);
   },
