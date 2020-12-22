@@ -121,6 +121,6 @@ build
 /config
 /controllers
 /middlewares
-/model
+/models
 /services
 /admin
