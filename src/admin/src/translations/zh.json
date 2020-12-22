@@ -1,0 +1,12 @@
+{
+  "plugin.name": "預覽內容",
+  "settings.form.baseUrl.description": "創建要在前端使用的自定義預覽網址",
+  "settings.form.baseUrl.label": "預覽網址",
+  "settings.form.baseUrl.available": "可用參數：",
+  "settings.form.baseUrl.available.contentType": "要查詢的內容類型（在url中要求）",
+  "settings.form.baseUrl.available.id": "要查詢的ID（在URL中必需）",
+  "settings.form.baseUrl.example": "示例：",
+  "settings.header.label": "預覽內容-設置",
+  "settings.section.general.label": "一般",
+  "settings.sub-header.label": "配置預覽設置功能的設置"
+}

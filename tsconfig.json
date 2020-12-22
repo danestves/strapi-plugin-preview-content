@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": ".",
+    "lib": ["esnext", "dom"],
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "incremental": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["external-types/*", "src/**/*", "src/**/*.json"],
+  "exclude": ["node_modules", "dist"]
+}

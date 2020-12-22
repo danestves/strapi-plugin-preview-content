@@ -1,0 +1,12 @@
+{
+  "plugin.name": "Podgląd treści",
+  "settings.form.baseUrl.description": "Utwórz niestandardowy URL podglądu do użycia w interfejsie użytkownika",
+  "settings.form.baseUrl.label": "URL podglądu",
+  "settings.form.baseUrl.available": "Dostępne parametry:",
+  "settings.form.baseUrl.available.contentType": "Typ treści do zapytania (wymagany w url)",
+  "settings.form.baseUrl.available.id": "Identyfikator do zapytania (wymagany w url)",
+  "settings.form.baseUrl.example": "Przykład:",
+  "settings.header.label": "Podgląd treści - ustawienia",
+  "settings.section.general.label": "OGÓLNE",
+  "settings.sub-header.label": "Skonfiguruj ustawienia funkcji podglądu"
+}

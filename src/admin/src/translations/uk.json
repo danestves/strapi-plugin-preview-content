@@ -1,0 +1,12 @@
+{
+  "plugin.name": "Попередній перегляд вмісту",
+  "settings.form.baseUrl.description": "Створити користувацьку URL-адресу попереднього перегляду для використання у вашому інтерфейсі",
+  "settings.form.baseUrl.label": "Попередній перегляд URL-адреси",
+  "settings.form.baseUrl.available": "Доступні параметри:",
+  "settings.form.baseUrl.available.contentType": "Тип вмісту для запиту (обов'язково в URL-адресі)",
+  "settings.form.baseUrl.available.id": "Ідентифікатор для запиту (обов'язковий в URL-адресі)",
+  "settings.form.baseUrl.example": "Приклад:",
+  "settings.header.label": "Попередній перегляд вмісту - Налаштування",
+  "settings.section.general.label": "ЗАГАЛЬНЕ",
+  "settings.sub-header.label": "Налаштування параметрів функціональності налаштувань попереднього перегляду"
+}

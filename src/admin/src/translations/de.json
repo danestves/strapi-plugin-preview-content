@@ -1,0 +1,12 @@
+{
+  "plugin.name": "Vorschau des Inhalts",
+  "settings.form.baseUrl.description": "Erstellen Sie eine benutzerdefinierte Vorschau-URL, die in Ihrem Frontend verwendet werden soll",
+  "settings.form.baseUrl.label": "URL-Vorschau",
+  "settings.form.baseUrl.available": "Verfügbare Parameter:",
+  "settings.form.baseUrl.available.contentType": "Der abzufragende Inhaltstyp (in der URL erforderlich)",
+  "settings.form.baseUrl.available.id": "Die abzufragende ID (in der URL erforderlich)",
+  "settings.form.baseUrl.example": "Example:",
+  "settings.header.label": "Vorschau von Inhalten - Einstellungen",
+  "settings.section.general.label": "GENERAL",
+  "settings.sub-header.label": "Konfigurieren Sie die Einstellungen für die Funktion der Vorschaueinstellungen"
+}

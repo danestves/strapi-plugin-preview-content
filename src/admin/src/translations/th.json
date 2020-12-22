@@ -1,0 +1,12 @@
+{
+  "plugin.name": "ดูตัวอย่างเนื้อหา",
+  "settings.form.baseUrl.description": "สร้าง URL ตัวอย่างที่กำหนดเองเพื่อใช้ในส่วนหน้าของคุณ",
+  "settings.form.baseUrl.label": "แสดงตัวอย่าง url",
+  "settings.form.baseUrl.available": "พารามิเตอร์ที่มี:",
+  "settings.form.baseUrl.available.contentType": "ประเภทเนื้อหาที่จะสืบค้น (จำเป็นใน url)",
+  "settings.form.baseUrl.available.id": "รหัสที่จะค้นหา (จำเป็นใน url)",
+  "settings.form.baseUrl.example": "ตัวอย่าง:",
+  "settings.header.label": "ดูตัวอย่างเนื้อหา - การตั้งค่า",
+  "settings.section.general.label": "GENERAL",
+  "settings.sub-header.label": "กำหนดการตั้งค่าสำหรับ funcionality การตั้งค่าการแสดงตัวอย่าง"
+}

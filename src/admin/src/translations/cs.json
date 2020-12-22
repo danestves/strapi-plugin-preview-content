@@ -1,0 +1,12 @@
+{
+  "plugin.name": "Náhled obsahu",
+  "settings.form.baseUrl.description": "Vytvořit vlastní adresu URL náhledu, která bude použita ve vašem rozhraní",
+  "settings.form.baseUrl.label": "Náhled adresy URL",
+  "settings.form.baseUrl.available": "Dostupné parametry:",
+  "settings.form.baseUrl.available.contentType": "Typ obsahu, který má být dotazován (požadovaný v adrese URL)",
+  "settings.form.baseUrl.available.id": "ID pro dotaz (vyžadováno v adrese URL)",
+  "settings.form.baseUrl.example": "Příklad:",
+  "settings.header.label": "Náhled obsahu - nastavení",
+  "settings.section.general.label": "OBECNÉ",
+  "settings.sub-header.label": "Konfigurovat nastavení funkce náhledu nastavení"
+}

@@ -1,0 +1,12 @@
+{
+  "plugin.name": "Preview Content",
+  "settings.form.baseUrl.description": "Create custom preview url to be used in your frontend",
+  "settings.form.baseUrl.label": "Preview url",
+  "settings.form.baseUrl.available": "Available parameters:",
+  "settings.form.baseUrl.available.contentType": "The content type to query (required in the url)",
+  "settings.form.baseUrl.available.id": "The id to query (required in the url)",
+  "settings.form.baseUrl.example": "Example:",
+  "settings.header.label": "Preview Content - Settings",
+  "settings.section.general.label": "GENERAL",
+  "settings.sub-header.label": "Configure the settings for the preview settings funcionality"
+}

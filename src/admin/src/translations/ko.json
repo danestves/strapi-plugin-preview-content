@@ -1,0 +1,12 @@
+{
+  "plugin.name": "콘텐츠 미리보기",
+  "settings.form.baseUrl.description": "프런트 엔드에서 사용할 맞춤 미리보기 URL 만들기",
+  "settings.form.baseUrl.label": "URL 미리보기",
+  "settings.form.baseUrl.available": "사용 가능한 매개 변수 :",
+  "settings.form.baseUrl.available.contentType": "검색 할 콘텐츠 유형 (URL에 필요)",
+  "settings.form.baseUrl.available.id": "검색 할 ID (URL에 필요)",
+  "settings.form.baseUrl.example": "예 :",
+  "settings.header.label": "콘텐츠 미리보기-설정",
+  "settings.section.general.label": "일반",
+  "settings.sub-header.label": "미리보기 설정 기능에 대한 설정 구성"
+}

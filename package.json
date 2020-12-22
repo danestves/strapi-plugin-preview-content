@@ -1,0 +1,38 @@
+{
+  "name": "strapi-plugin-preview-content",
+  "version": "0.0.1",
+  "description": "Preview your content with custom URL.",
+  "main": "admin/main/index.js",
+  "strapi": {
+    "name": "Preview Content",
+    "icon": "link",
+    "description": "Preview your content with custom URL."
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {},
+  "author": {
+    "name": "Daniel Esteves",
+    "email": "estevesd8@gmail.com",
+    "url": "https://danestves.com"
+  },
+  "maintainers": [
+    {
+      "name": "Daniel Esteves",
+      "email": "estevesd8@gmail.com",
+      "url": "https://danestves.com"
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/koa": "^2.11.6",
+    "@types/lodash": "^4.14.165",
+    "koa": "^2.13.0"
+  }
+}

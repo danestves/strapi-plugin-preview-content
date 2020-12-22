@@ -1,0 +1,12 @@
+{
+  "plugin.name": "Pratonton Kandungan",
+  "settings.form.baseUrl.description": "Buat url pratonton khusus untuk digunakan di frontend anda",
+  "settings.form.baseUrl.label": "Pratonton url",
+  "settings.form.baseUrl.available": "Parameter yang tersedia:",
+  "settings.form.baseUrl.available.contentType": "Jenis kandungan untuk pertanyaan (diperlukan dalam url)",
+  "settings.form.baseUrl.available.id": "Id untuk pertanyaan (diperlukan dalam url)",
+  "settings.form.baseUrl.example": "Contoh:",
+  "settings.header.label": "Pratonton Kandungan - Tetapan",
+  "settings.section.general.label": "UMUM",
+  "settings.sub-header.label": "Konfigurasikan tetapan untuk fungsi tetapan pratonton"
+}

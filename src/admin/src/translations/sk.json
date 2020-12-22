@@ -1,0 +1,12 @@
+{
+  "plugin.name": "Zobraziť ukážku obsahu",
+  "settings.form.baseUrl.description": "Vytvoriť vlastnú adresu URL ukážky, ktorá sa použije vo vašom klientskom rozhraní",
+  "settings.form.baseUrl.label": "Ukážka ukážky",
+  "settings.form.baseUrl.available": "Dostupné parametre:",
+  "settings.form.baseUrl.available.contentType": "Typ obsahu, ktorý sa má vyhľadať (požadovaný v adrese URL)",
+  "settings.form.baseUrl.available.id": "ID na dopyt (požadované v adrese URL)",
+  "settings.form.baseUrl.example": "Príklad:",
+  "settings.header.label": "Zobraziť ukážku obsahu - Nastavenia",
+  "settings.section.general.label": "VŠEOBECNÉ",
+  "settings.sub-header.label": "Konfigurovať nastavenia funkčnosti nastavenia ukážky"
+}
