@@ -8,10 +8,6 @@
     "icon": "link",
     "description": "Preview your content with custom URL."
   },
-  "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "yarn build"
-  },
   "dependencies": {},
   "author": {
     "name": "Daniel Esteves",
