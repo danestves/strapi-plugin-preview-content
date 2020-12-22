@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-preview-content",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Preview your content with custom URL.",
   "main": "admin/main/index.js",
   "strapi": {
@@ -12,7 +12,8 @@
     "admin",
     "config",
     "controllers",
-    "services"
+    "services",
+    "models"
   ],
   "scripts": {
     "build": "tsc",
