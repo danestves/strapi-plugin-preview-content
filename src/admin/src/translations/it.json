@@ -1,11 +1,11 @@
 {
   "plugin.name": "Anteprima contenuto",
-  "settings.form.baseUrl.description": "Crea un URL di anteprima personalizzato da utilizzare nel tuo frontend",
-  "settings.form.baseUrl.label": "Anteprima URL",
-  "settings.form.baseUrl.available": "Parametri disponibili:",
-  "settings.form.baseUrl.available.contentType": "Il tipo di contenuto da interrogare (obbligatorio nell'URL)",
-  "settings.form.baseUrl.available.id": "L'ID da interrogare (obbligatorio nell'URL)",
-  "settings.form.baseUrl.example": "Esempio:",
+  "settings.form.previewUrl.description": "Crea un URL di anteprima personalizzato da utilizzare nel tuo frontend",
+  "settings.form.previewUrl.label": "Anteprima URL",
+  "settings.form.previewUrl.available": "Parametri disponibili:",
+  "settings.form.previewUrl.available.contentType": "Il tipo di contenuto da interrogare (obbligatorio nell'URL)",
+  "settings.form.previewUrl.available.id": "L'ID da interrogare (obbligatorio nell'URL)",
+  "settings.form.previewUrl.example": "Esempio:",
   "settings.header.label": "Anteprima contenuto - Impostazioni",
   "settings.section.general.label": "GENERAL",
   "settings.sub-header.label": "Configura le impostazioni per la funzionalità delle impostazioni di anteprima"

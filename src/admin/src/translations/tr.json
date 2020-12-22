@@ -1,11 +1,11 @@
 {
   "plugin.name": "İçeriği Önizle",
-  "settings.form.baseUrl.description": "Ön ucunuzda kullanılacak özel önizleme url'si oluşturun",
-  "settings.form.baseUrl.label": "Önizleme url'si",
-  "settings.form.baseUrl.available": "Kullanılabilir parametreler:",
-  "settings.form.baseUrl.available.contentType": "Sorgulanacak içerik türü (url'de gerekli)",
-  "settings.form.baseUrl.available.id": "Sorgulanacak kimlik (url'de gereklidir)",
-  "settings.form.baseUrl.example": "Örnek:",
+  "settings.form.previewUrl.description": "Ön ucunuzda kullanılacak özel önizleme url'si oluşturun",
+  "settings.form.previewUrl.label": "Önizleme url'si",
+  "settings.form.previewUrl.available": "Kullanılabilir parametreler:",
+  "settings.form.previewUrl.available.contentType": "Sorgulanacak içerik türü (url'de gerekli)",
+  "settings.form.previewUrl.available.id": "Sorgulanacak kimlik (url'de gereklidir)",
+  "settings.form.previewUrl.example": "Örnek:",
   "settings.header.label": "İçeriği Önizle - Ayarlar",
   "settings.section.general.label": "GENEL",
   "settings.sub-header.label": "Önizleme ayarları işlevselliği için ayarları yapılandırın"

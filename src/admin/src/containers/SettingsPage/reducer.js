@@ -3,10 +3,10 @@ import { fromJS } from "immutable";
 const initialState = fromJS({
   isLoading: true,
   initialData: {
-    baseUrl: "",
+    previewUrl: "",
   },
   modifiedData: {
-    baseUrl: "",
+    previewUrl: "",
   },
 });
 

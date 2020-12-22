@@ -1,11 +1,11 @@
 {
   "plugin.name": "Xem trước Nội dung",
-  "settings.form.baseUrl.description": "Tạo url xem trước tùy chỉnh để sử dụng trong giao diện người dùng của bạn",
-  "settings.form.baseUrl.label": "Url xem trước",
-  "settings.form.baseUrl.available": "Các thông số có sẵn:",
-  "settings.form.baseUrl.available.contentType": "Loại nội dung để truy vấn (bắt buộc trong url)",
-  "settings.form.baseUrl.available.id": "Id để truy vấn (bắt buộc trong url)",
-  "settings.form.baseUrl.example": "Ví dụ:",
+  "settings.form.previewUrl.description": "Tạo url xem trước tùy chỉnh để sử dụng trong giao diện người dùng của bạn",
+  "settings.form.previewUrl.label": "Url xem trước",
+  "settings.form.previewUrl.available": "Các thông số có sẵn:",
+  "settings.form.previewUrl.available.contentType": "Loại nội dung để truy vấn (bắt buộc trong url)",
+  "settings.form.previewUrl.available.id": "Id để truy vấn (bắt buộc trong url)",
+  "settings.form.previewUrl.example": "Ví dụ:",
   "settings.header.label": "Xem trước Nội dung - Cài đặt",
   "settings.section.general.label": "CHUNG",
   "settings.sub-header.label": "Định cấu hình cài đặt cho tính năng cá tính của cài đặt xem trước"

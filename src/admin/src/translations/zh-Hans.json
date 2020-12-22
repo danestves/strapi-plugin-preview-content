@@ -1,11 +1,11 @@
 {
   "plugin.name": "预览内容",
-  " settings.form.baseUrl.description": "创建要在前端使用的自定义预览网址",
-  " settings.form.baseUrl.label": "预览网址",
-  " settings.form.baseUrl.available": "可用参数:",
-  " settings.form.baseUrl.available.contentType": "要查询的内容类型（在url中要求）",
-  " settings.form.baseUrl.available.id": "要查询的ID（在URL中必需）",
-  " settings.form.baseUrl.example": "示例:",
+  " settings.form.previewUrl.description": "创建要在前端使用的自定义预览网址",
+  " settings.form.previewUrl.label": "预览网址",
+  " settings.form.previewUrl.available": "可用参数:",
+  " settings.form.previewUrl.available.contentType": "要查询的内容类型（在url中要求）",
+  " settings.form.previewUrl.available.id": "要查询的ID（在URL中必需）",
+  " settings.form.previewUrl.example": "示例:",
   " settings.header.label": "预览内容-设置",
   " settings.section.general.label": "一般",
   " settings.sub-header.label": "配置预览设置功能的设置"

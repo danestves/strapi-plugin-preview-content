@@ -118,13 +118,9 @@ module.exports = {
     contentId: string,
     _query: Record<string, string | number>
   ) {
-    // @ts-ignore
-    const results = await strapi
-      .query("plugins::preview-content.settings")
-      .find({ _limit: 1 });
-    const entity: any = _.first(results) || null;
+    const entity = await this.getSettings();
 
-    const previewUrl = entity.baseUrl || "";
+    const previewUrl = entity.previewUrl || "";
 
     return this.replacePreviewParams(contentType, contentId, previewUrl);
   },
@@ -139,5 +135,25 @@ module.exports = {
    */
   replacePreviewParams(contentType: string, contentId: string, url: string) {
     return url.replace(":contentType", contentType).replace(":id", contentId);
+  },
+  async getSettings() {
+    // @ts-ignore
+    return strapi
+      .store({
+        type: "plugin",
+        name: "preview-content",
+        key: "settings",
+      })
+      .get();
+  },
+  async setSettings(value: any) {
+    // @ts-ignore
+    return strapi
+      .store({
+        type: "plugin",
+        name: "preview-content",
+        key: "settings",
+      })
+      .set({ value });
   },
 };

@@ -1,11 +1,11 @@
 {
   "plugin.name": "Предварительный просмотр содержимого",
-  "settings.form.baseUrl.description": "Создайте настраиваемый URL-адрес предварительного просмотра, который будет использоваться в вашем интерфейсе",
-  "settings.form.baseUrl.label": "URL предварительного просмотра",
-  "settings.form.baseUrl.available": "Доступные параметры:",
-  "settings.form.baseUrl.available.contentType": "Тип контента для запроса (требуется в URL-адресе)",
-  "settings.form.baseUrl.available.id": "Идентификатор запроса (требуется в URL-адресе)",
-  "settings.form.baseUrl.example": "Пример:",
+  "settings.form.previewUrl.description": "Создайте настраиваемый URL-адрес предварительного просмотра, который будет использоваться в вашем интерфейсе",
+  "settings.form.previewUrl.label": "URL предварительного просмотра",
+  "settings.form.previewUrl.available": "Доступные параметры:",
+  "settings.form.previewUrl.available.contentType": "Тип контента для запроса (требуется в URL-адресе)",
+  "settings.form.previewUrl.available.id": "Идентификатор запроса (требуется в URL-адресе)",
+  "settings.form.previewUrl.example": "Пример:",
   "settings.header.label": "Предварительный просмотр содержимого - Настройки",
   "settings.section.general.label": "GENERAL",
   "settings.sub-header.label": "Настроить параметры для функциональности параметров предварительного просмотра"

@@ -1,11 +1,11 @@
 {
   "plugin.name": "Voorbeeld van inhoud",
-  "settings.form.baseUrl.description": "Maak een aangepaste voorbeeld-URL voor gebruik in uw frontend",
-  "settings.form.baseUrl.label": "Preview url",
-  "settings.form.baseUrl.available": "Beschikbare parameters:",
-  "settings.form.baseUrl.available.contentType": "Het inhoudstype dat moet worden opgevraagd (vereist in de url)",
-  "settings.form.baseUrl.available.id": "De id die moet worden opgevraagd (vereist in de url)",
-  "settings.form.baseUrl.example": "Voorbeeld:",
+  "settings.form.previewUrl.description": "Maak een aangepaste voorbeeld-URL voor gebruik in uw frontend",
+  "settings.form.previewUrl.label": "Preview url",
+  "settings.form.previewUrl.available": "Beschikbare parameters:",
+  "settings.form.previewUrl.available.contentType": "Het inhoudstype dat moet worden opgevraagd (vereist in de url)",
+  "settings.form.previewUrl.available.id": "De id die moet worden opgevraagd (vereist in de url)",
+  "settings.form.previewUrl.example": "Voorbeeld:",
   "settings.header.label": "Voorbeeld van inhoud - Instellingen",
   "settings.section.general.label": "ALGEMEEN",
   "settings.sub-header.label": "Configureer de instellingen voor de functionaliteit van de voorbeeldinstellingen"

@@ -1,13 +1,13 @@
 "use strict";
 import { Context } from "koa";
 import _ from "lodash";
+const validateSettings = require("./validations/settings");
 
 /**
  * preview.js controller
  *
  * @description: A set of functions called "actions" of the `preview` plugin.
  */
-
 module.exports = {
   /**
    * Get if preview services is active
@@ -30,7 +30,6 @@ module.exports = {
    * @returns Returns the content type by id, otherwise null.
    */
   async findOne(ctx: Context) {
-    console.log(global.strapi.plugins);
     const service = global.strapi.plugins["preview-content"].services.preview;
     const contentPreview = await service.findOne(
       ctx.params.contentType,
@@ -91,11 +90,26 @@ module.exports = {
    */
   async getSettings(ctx: Context) {
     // @ts-ignore
-    const results = await strapi
-      .query("plugins::preview-content.settings")
-      .find({ _limit: 1 });
-    const entity = _.first(results) || null;
+    const data = await strapi.plugins[
+      "preview-content"
+    ].services.preview.getSettings();
 
-    ctx.send({ data: entity });
+    ctx.body = { data };
+  },
+  /**
+   * Update settings of the plugin
+   */
+  async updateSettings(ctx: Context) {
+    const {
+      // @ts-ignore
+      request: { body },
+    } = ctx;
+
+    const data = await validateSettings(body);
+
+    // @ts-ignore
+    await strapi.plugins["preview-content"].services.preview.setSettings(data);
+
+    ctx.body = { data };
   },
 };

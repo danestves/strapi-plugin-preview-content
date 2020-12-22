@@ -1,11 +1,11 @@
 {
   "plugin.name": "Aperçu du contenu",
-  "settings.form.baseUrl.description": "Créer une URL de prévisualisation personnalisée à utiliser dans votre frontend",
-  "settings.form.baseUrl.label": "Aperçu de l'url",
-  "settings.form.baseUrl.available": "Paramètres disponibles:",
-  "settings.form.baseUrl.available.contentType": "Le type de contenu à interroger (obligatoire dans l'url)",
-  "settings.form.baseUrl.available.id": "L'identifiant à interroger (obligatoire dans l'url)",
-  "settings.form.baseUrl.example": "Exemple:",
+  "settings.form.previewUrl.description": "Créer une URL de prévisualisation personnalisée à utiliser dans votre frontend",
+  "settings.form.previewUrl.label": "Aperçu de l'url",
+  "settings.form.previewUrl.available": "Paramètres disponibles:",
+  "settings.form.previewUrl.available.contentType": "Le type de contenu à interroger (obligatoire dans l'url)",
+  "settings.form.previewUrl.available.id": "L'identifiant à interroger (obligatoire dans l'url)",
+  "settings.form.previewUrl.example": "Exemple:",
   "settings.header.label": "Aperçu du contenu - Paramètres",
   "settings.section.general.label": "GENERAL",
   "settings.sub-header.label": "Configurer les paramètres de la fonctionnalité des paramètres de prévisualisation"

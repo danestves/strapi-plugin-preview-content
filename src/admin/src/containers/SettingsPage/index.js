@@ -62,7 +62,7 @@ const SettingsPage = () => {
   const handleSubmit = async () => {
     try {
       await request(getRequestUrl("settings"), {
-        method: "POST",
+        method: "PUT",
         body: modifiedData,
       });
 
@@ -132,21 +132,21 @@ const SettingsPage = () => {
             <div className="col-12">
               <Inputs
                 label={formatMessage({
-                  id: getTrad("settings.form.baseUrl.label"),
+                  id: getTrad("settings.form.previewUrl.label"),
                 })}
                 description={formatMessage({
-                  id: getTrad("settings.form.baseUrl.description"),
+                  id: getTrad("settings.form.previewUrl.description"),
                 })}
-                name="baseUrl"
+                name="previewUrl"
                 onChange={handleChange}
                 type="text"
-                value={modifiedData.baseUrl}
+                value={modifiedData.previewUrl}
               />
             </div>
             <div className="col-12">
               <Text fontSize="md" fontWeight="semiBold" color="#333740">
                 {formatMessage({
-                  id: getTrad("settings.form.baseUrl.available"),
+                  id: getTrad("settings.form.previewUrl.available"),
                 })}
               </Text>
 
@@ -165,7 +165,7 @@ const SettingsPage = () => {
                   <Text fontSize="md" color="#787E8F" className="ml-2">
                     {formatMessage({
                       id: getTrad(
-                        "settings.form.baseUrl.available.contentType"
+                        "settings.form.previewUrl.available.contentType"
                       ),
                     })}
                   </Text>
@@ -181,7 +181,7 @@ const SettingsPage = () => {
 
                   <Text fontSize="md" color="#787E8F" className="ml-2">
                     {formatMessage({
-                      id: getTrad("settings.form.baseUrl.available.id"),
+                      id: getTrad("settings.form.previewUrl.available.id"),
                     })}
                   </Text>
                 </div>
@@ -190,7 +190,7 @@ const SettingsPage = () => {
             <div className="col-12 mt-4">
               <Text fontSize="md" fontWeight="semiBold" color="#333740">
                 {formatMessage({
-                  id: getTrad("settings.form.baseUrl.example"),
+                  id: getTrad("settings.form.previewUrl.example"),
                 })}
               </Text>
 

@@ -1,11 +1,11 @@
 {
   "plugin.name": "Visualizar conteúdo",
-  "settings.form.baseUrl.description": "Crie um URL de visualização personalizado para ser usado em seu frontend",
-  "settings.form.baseUrl.label": "Visualizar url",
-  "settings.form.baseUrl.available": "Parâmetros disponíveis:",
-  "settings.form.baseUrl.available.contentType": "O tipo de conteúdo a ser consultado (obrigatório no url)",
-  "settings.form.baseUrl.available.id": "O id a consultar (obrigatório no url)",
-  "settings.form.baseUrl.example": "Exemplo:",
+  "settings.form.previewUrl.description": "Crie um URL de visualização personalizado para ser usado em seu frontend",
+  "settings.form.previewUrl.label": "Visualizar url",
+  "settings.form.previewUrl.available": "Parâmetros disponíveis:",
+  "settings.form.previewUrl.available.contentType": "O tipo de conteúdo a ser consultado (obrigatório no url)",
+  "settings.form.previewUrl.available.id": "O id a consultar (obrigatório no url)",
+  "settings.form.previewUrl.example": "Exemplo:",
   "settings.header.label": "Visualizar conteúdo - Configurações",
   "settings.section.general.label": "GERAL",
   "settings.sub-header.label": "Definir as configurações para a funcionalidade de configurações de visualização"

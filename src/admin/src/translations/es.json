@@ -1,11 +1,11 @@
 {
   "plugin.name": "Vista Previa del Contenido",
-  "settings.form.baseUrl.description": "Cree una URL de vista previa personalizada para usar en su interfaz",
-  "settings.form.baseUrl.label": "URL de vista previa",
-  "settings.form.baseUrl.available": "Parámetros disponibles:",
-  "settings.form.baseUrl.available.contentType": "El tipo de contenido a consultar (requerido en la URL)",
-  "settings.form.baseUrl.available.id": "El ID a consultar (requerido en la url)",
-  "settings.form.baseUrl.example": "Ejemplo:",
+  "settings.form.previewUrl.description": "Cree una URL de vista previa personalizada para usar en su interfaz",
+  "settings.form.previewUrl.label": "URL de vista previa",
+  "settings.form.previewUrl.available": "Parámetros disponibles:",
+  "settings.form.previewUrl.available.contentType": "El tipo de contenido a consultar (requerido en la URL)",
+  "settings.form.previewUrl.available.id": "El ID a consultar (requerido en la url)",
+  "settings.form.previewUrl.example": "Ejemplo:",
   "settings.header.label": "Vista Previa del Contenido - Configuración",
   "settings.section.general.label": "GENERAL",
   "settings.sub-header.label": "Configure los ajustes para la funcionalidad de configuración de vista previa"

@@ -1,11 +1,11 @@
 {
   "plugin.name": "معاينة المحتوى",
-  "settings.form.baseUrl.description": "أنشئ عنوان url مخصصًا للمعاينة لاستخدامه في الواجهة الأمامية",
-  "settings.form.baseUrl.label": "معاينة عنوان URL",
-  "settings.form.baseUrl.available": "المعلمات المتوفرة:",
-  "settings.form.baseUrl.available.contentType": "نوع المحتوى المطلوب الاستعلام عنه (مطلوب في عنوان url)",
-  "settings.form.baseUrl.available.id": "معرف الاستعلام (مطلوب في عنوان url)",
-  "settings.form.baseUrl.example": "مثال:",
+  "settings.form.previewUrl.description": "أنشئ عنوان url مخصصًا للمعاينة لاستخدامه في الواجهة الأمامية",
+  "settings.form.previewUrl.label": "معاينة عنوان URL",
+  "settings.form.previewUrl.available": "المعلمات المتوفرة:",
+  "settings.form.previewUrl.available.contentType": "نوع المحتوى المطلوب الاستعلام عنه (مطلوب في عنوان url)",
+  "settings.form.previewUrl.available.id": "معرف الاستعلام (مطلوب في عنوان url)",
+  "settings.form.previewUrl.example": "مثال:",
   "settings.header.label": "معاينة المحتوى - الإعدادات",
   "settings.section.general.label": "عام",
   "settings.sub-header.label": "تكوين الإعدادات لوظيفة إعدادات المعاينة"
