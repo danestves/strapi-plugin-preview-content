@@ -75,19 +75,18 @@ export const PreviewProvider = ({
                 params,
               }
             );
+
             if (data.url) {
               window.open(data.url, "_blank");
             } else {
-              strapi.notification.config({
-                type: "error",
-                message: getPreviewPluginTrad("error.previewUrl.notFound"),
-              });
+              strapi.notification.error(
+                getPreviewPluginTrad("error.previewUrl.notFound")
+              );
             }
           } catch (_e) {
-            strapi.notification.config({
-              type: "error",
-              message: getPreviewPluginTrad("error.previewUrl.notFound"),
-            });
+            strapi.notification.error(
+              getPreviewPluginTrad("error.previewUrl.notFound")
+            );
           }
         },
         type: "button",
@@ -113,6 +112,7 @@ export const PreviewProvider = ({
             paddingLeft: 15,
             paddingRight: 15,
             fontWeight: 600,
+            minWidth: 100,
           },
         });
       } else {
@@ -128,6 +128,7 @@ export const PreviewProvider = ({
             paddingLeft: 15,
             paddingRight: 15,
             fontWeight: 600,
+            minWidth: 75,
           },
         });
       }
@@ -150,36 +151,25 @@ export const PreviewProvider = ({
     try {
       // Show the loading state
       setButtonLoading(true);
-      const clonedPayload = await request(getRequestUrl(slug), {
-        method: "GET",
-        body: {
-          ...initialData,
-          cloneOf: initialData.id,
-          options: {
-            ...initialData.options,
-            previewable: true,
-          },
-        },
-      });
 
-      strapi.notification.config({
-        type: "success",
-        message: getPreviewPluginTrad("success.record.clone"),
-      });
+      strapi.notification.success(getPreviewPluginTrad("success.record.clone"));
 
-      window.location.replace(getFrontendEntityUrl(slug, clonedPayload.id));
+      window.location.replace(getFrontendEntityUrl(slug, initialData.id));
     } catch (err) {
+      console.log(err);
       const errorMessage = get(
         err,
         "response.payload.message",
         formatMessage({ id: getPreviewPluginTrad("error.record.clone") })
       );
+
       strapi.notification.error(errorMessage);
     } finally {
       setButtonLoading(false);
       toggleWarningClone();
     }
   };
+
   const handleConfirmPreviewPublish = async () => {
     try {
       // Show the loading state
@@ -201,10 +191,10 @@ export const PreviewProvider = ({
         method: "DELETE",
       });
 
-      strapi.notification.config({
-        type: "success",
-        message: getPreviewPluginTrad("success.record.publish"),
-      });
+      strapi.notification.success(
+        getPreviewPluginTrad("success.record.publish")
+      );
+
       window.location.replace(getFrontendEntityUrl(slug, targetId));
     } catch (err) {
       const errorMessage = get(
@@ -212,10 +202,8 @@ export const PreviewProvider = ({
         "response.payload.message",
         formatMessage({ id: getPreviewPluginTrad("error.record.publish") })
       );
-      strapi.notification.config({
-        type: "error",
-        message: errorMessage,
-      });
+
+      strapi.notification.error(errorMessage);
     } finally {
       setButtonLoading(false);
       toggleWarningPublish();
@@ -296,7 +284,7 @@ function prepareToPublish(payload) {
 }
 
 const getRequestUrl = (path) =>
-  `/${CONTENT_MANAGER_PLUGIN_ID}/collection-types/${path}/${id}`;
+  `/${CONTENT_MANAGER_PLUGIN_ID}/explorer/${path}`;
 const getFrontendEntityUrl = (path, id) =>
   `/admin/plugins/${CONTENT_MANAGER_PLUGIN_ID}/collectionType/${path}/create/clone/${id}`;
 

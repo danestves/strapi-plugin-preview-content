@@ -125,11 +125,6 @@ module.exports = {
     const entity: any = _.first(results) || null;
 
     const previewUrl = entity.baseUrl || "";
-    console.log({ entity });
-    console.log({ previewUrl });
-    console.log({
-      url: this.replacePreviewParams(contentType, contentId, previewUrl),
-    });
 
     return this.replacePreviewParams(contentType, contentId, previewUrl);
   },
