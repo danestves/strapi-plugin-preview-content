@@ -1,5 +1,7 @@
 "use strict";
 
+import _ from "lodash";
+
 const { sanitizeEntity } = require("strapi-utils");
 
 const PreviewError = require("./preview-error");
