@@ -10,6 +10,20 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 - `removed`: for deprecated features removed in this release
 - `fixed`: for any bug fixes
 
+## [0.2.56] - 2020-12-22
+
+### Added
+
+- Plugin settings directly in `core_store`
+
+### Removed
+
+- Models not needed
+
+## Fixed
+
+- Connection with database
+
 ## [0.2.2] - 2020-12-22
 
 ### Added
