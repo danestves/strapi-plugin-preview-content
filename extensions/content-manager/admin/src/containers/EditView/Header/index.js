@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import isEqualFastCompare from "react-fast-compare";
 import { Text } from "@buffetjs/core";
 import { templateObject, ModalConfirm } from "strapi-helper-plugin";
+import { usePreview } from "strapi-plugin-preview-content";
 import { getTrad } from "../../../utils";
 import { connect, getDraftRelations, select } from "./utils";
 
@@ -31,6 +32,7 @@ const Header = ({
   onUnpublish,
   status,
 }) => {
+  const { previewHeaderActions } = usePreview();
   const [showWarningUnpublish, setWarningUnpublish] = useState(false);
   const { formatMessage } = useIntl();
   const formatMessageRef = useRef(formatMessage);
@@ -131,7 +133,7 @@ const Header = ({
       headerActions.unshift(action);
     }
 
-    return [...headerActions];
+    return [...previewHeaderActions, ...headerActions];
   }, [
     isCreatingEntry,
     canCreate,
@@ -144,6 +146,7 @@ const Header = ({
     initialData,
     onPublish,
     checkIfHasDraftRelations,
+    previewHeaderActions,
   ]);
 
   const headerProps = useMemo(() => {

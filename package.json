@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-preview-content",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Preview your content with custom URL.",
   "main": "admin/main/index.js",
   "strapi": {
@@ -8,11 +8,19 @@
     "icon": "link",
     "description": "Preview your content with custom URL."
   },
+  "files": [
+    "admin",
+    "config",
+    "controllers",
+    "services"
+  ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "yarn build"
+    "prepublish": "yarn build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "strapi-plugin-preview": "^0.4.1"
+  },
   "author": {
     "name": "Daniel Esteves",
     "email": "estevesd8@gmail.com",
