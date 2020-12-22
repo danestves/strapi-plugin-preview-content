@@ -1,4 +1,4 @@
-import pluginPkg from "../../../package.json";
+import pluginPkg from "../../package.json";
 import pluginId from "./pluginId";
 import Initializer from "./containers/Initializer";
 import lifecycles from "./lifecycles";

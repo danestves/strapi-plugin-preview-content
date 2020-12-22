@@ -1,6 +1,6 @@
 "use strict";
-const { Context } = require("koa");
-const _ = require("lodash");
+import { Context } from "koa";
+import _ from "lodash";
 
 /**
  * preview.js controller
@@ -12,11 +12,11 @@ module.exports = {
   /**
    * Get if preview services is active
    *
-   * @param {Context} ctx
+   * @param ctx
    *
-   * @return {Boolean} Returns true or false for preview
+   * @return Returns true or false for preview
    */
-  async isPreviewable(ctx) {
+  async isPreviewable(ctx: Context) {
     const service = global.strapi.plugins["preview-content"].services.preview;
     const isPreviewable = await service.isPreviewable(ctx.params.contentType);
 
@@ -25,11 +25,11 @@ module.exports = {
   /**
    * Find a content type by id
    *
-   * @param {Context} ctx
+   * @param ctx
    *
-   * @returns {Object} Returns the content type by id, otherwise null.
+   * @returns Returns the content type by id, otherwise null.
    */
-  async findOne(ctx) {
+  async findOne(ctx: Context) {
     console.log(global.strapi.plugins);
     const service = global.strapi.plugins["preview-content"].services.preview;
     const contentPreview = await service.findOne(
@@ -43,11 +43,11 @@ module.exports = {
   /**
    * Get preview url of content type
    *
-   * @param {Context} ctx
+   * @param ctx
    *
-   * @returns {Object} Returns the object containing the preview url, otherwise null.
+   * @returns eturns the object containing the preview url, otherwise null.
    */
-  getPreviewUrl(ctx) {
+  getPreviewUrl(ctx: Context) {
     const {
       params: { contentType, id },
       query,
@@ -60,23 +60,24 @@ module.exports = {
   /**
    * Create or update the current settings configuration
    *
-   * @param {Context} ctx
-   *
-   * @return {Promise}
+   * @param ctx
    */
-  async createOrUpdate(ctx) {
-    const data = ctx.request.body;
+  async createOrUpdate(ctx: Context) {
+    const data = ctx.body;
+    // @ts-ignore
     const results = await strapi
       .query("plugins::preview-content.settings")
       .find({ _limit: 1 });
-    const entity = _.first(results) || null;
+    const entity: any = _.first(results) || null;
 
-    let entry;
+    let entry: any;
     if (!entity) {
+      // @ts-ignore
       entry = await strapi
         .query("plugins::preview-content.settings")
         .create(data);
     } else {
+      // @ts-ignore
       entry = await strapi
         .query("plugins::preview-content.settings")
         .update({ id: entity.id }, data);
@@ -86,10 +87,9 @@ module.exports = {
   },
   /**
    * Get settings of the plugin
-   *
-   * @param {Context} ctx
    */
-  async getSettings(ctx) {
+  async getSettings(ctx: Context) {
+    // @ts-ignore
     const results = await strapi
       .query("plugins::preview-content.settings")
       .find({ _limit: 1 });
