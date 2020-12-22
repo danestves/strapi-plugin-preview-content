@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-preview-content",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Preview your content with custom URL.",
   "main": "admin/main/index.js",
   "strapi": {

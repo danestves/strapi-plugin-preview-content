@@ -55,7 +55,7 @@ module.exports = {
     const service = global.strapi.plugins["preview-content"].services.preview;
     const url = service.getPreviewUrl(contentType, id, query);
 
-    ctx.send({ url });
+    ctx.send({ url: url || "" });
   },
   /**
    * Create or update the current settings configuration
