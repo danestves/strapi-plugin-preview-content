@@ -1,6 +1,6 @@
 "use strict";
-import { Context } from "koa";
-import _ from "lodash";
+const { Context } = require("koa");
+const _ = require("lodash");
 
 /**
  * preview.js controller
@@ -12,11 +12,11 @@ module.exports = {
   /**
    * Get if preview services is active
    *
-   * @param ctx
+   * @param {Context} ctx
    *
-   * @return Returns true or false for preview
+   * @return {Boolean} Returns true or false for preview
    */
-  async isPreviewable(ctx: Context) {
+  async isPreviewable(ctx) {
     const service = global.strapi.plugins["preview-content"].services.preview;
     const isPreviewable = await service.isPreviewable(ctx.params.contentType);
 
@@ -25,11 +25,11 @@ module.exports = {
   /**
    * Find a content type by id
    *
-   * @param ctx
+   * @param {Context} ctx
    *
-   * @returns Returns the content type by id, otherwise null.
+   * @returns {Object} Returns the content type by id, otherwise null.
    */
-  async findOne(ctx: Context) {
+  async findOne(ctx) {
     console.log(global.strapi.plugins);
     const service = global.strapi.plugins["preview-content"].services.preview;
     const contentPreview = await service.findOne(
@@ -43,11 +43,11 @@ module.exports = {
   /**
    * Get preview url of content type
    *
-   * @param ctx
+   * @param {Context} ctx
    *
-   * @returns Returns the object containing the preview url, otherwise null.
+   * @returns {Object} Returns the object containing the preview url, otherwise null.
    */
-  getPreviewUrl(ctx: Context) {
+  getPreviewUrl(ctx) {
     const {
       params: { contentType, id },
       query,
@@ -60,9 +60,11 @@ module.exports = {
   /**
    * Create or update the current settings configuration
    *
-   * @param ctx
+   * @param {Context} ctx
+   *
+   * @return {Promise}
    */
-  async createOrUpdate(ctx: Context): Promise<any> {
+  async createOrUpdate(ctx) {
     const data = ctx.request.body;
     const results = await strapi
       .query("plugins::preview-content.settings")
@@ -85,9 +87,9 @@ module.exports = {
   /**
    * Get settings of the plugin
    *
-   * @param ctx
+   * @param {Context} ctx
    */
-  async getSettings(ctx: Context) {
+  async getSettings(ctx) {
     const results = await strapi
       .query("plugins::preview-content.settings")
       .find({ _limit: 1 });

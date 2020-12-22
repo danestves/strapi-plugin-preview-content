@@ -33,7 +33,7 @@ module.exports = {
    *
    * @returns - Returns inf content type is previewable
    */
-  async isPreviewable(contentType: string) {
+  async isPreviewable(contentType) {
     const model = await global.strapi.query(contentType)?.model;
 
     if (model) {
@@ -50,11 +50,7 @@ module.exports = {
    *
    * @returns Returns an object with the template name, content type and data; otherwise error 400.
    */
-  async findOne(
-    contentType: string,
-    id: string,
-    query: Record<string, string>
-  ) {
+  async findOne(contentType, id, query) {
     const service = global.strapi.services[contentType];
     const model = global.strapi.models[contentType];
 
@@ -111,11 +107,7 @@ module.exports = {
    *
    * @returns The preview URL parsed with `replacePreviewParams()`
    */
-  getPreviewUrl(
-    contentType: string,
-    contentId: string,
-    _query: Record<string, string | number>
-  ) {
+  getPreviewUrl(contentType, contentId, _query) {
     const previewUrl = global.strapi.config.get("custom.previewUrl") || "";
 
     return this.replacePreviewParams(contentType, contentId, previewUrl);
@@ -129,7 +121,7 @@ module.exports = {
    *
    * @returns The replaced URL
    */
-  replacePreviewParams(contentType: string, contentId: string, url: string) {
+  replacePreviewParams(contentType, contentId, url) {
     return url.replace(":contentType", contentType).replace(":id", contentId);
   },
 };

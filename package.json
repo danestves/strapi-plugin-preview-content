@@ -30,9 +30,5 @@
     "npm": ">=6.0.0"
   },
   "license": "MIT",
-  "devDependencies": {
-    "@types/koa": "^2.11.6",
-    "@types/lodash": "^4.14.165",
-    "koa": "^2.13.0"
-  }
+  "devDependencies": {}
 }

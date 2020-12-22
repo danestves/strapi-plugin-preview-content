@@ -1,9 +1,9 @@
 module.exports = class PreviewError extends (
   Error
 ) {
-  status: number;
-  payload: any;
-  constructor(status: number, message: string, payload: any = undefined) {
+  status;
+  payload;
+  constructor(status, message, payload = undefined) {
     super();
     this.name = "Strapi:Plugin:PreviewContent";
     this.status = status || 500;
