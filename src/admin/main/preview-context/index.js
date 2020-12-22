@@ -78,14 +78,16 @@ export const PreviewProvider = ({
             if (data.url) {
               window.open(data.url, "_blank");
             } else {
-              strapi.notification.error(
-                getPreviewPluginTrad("error.previewUrl.notFound")
-              );
+              strapi.notification.config({
+                type: "error",
+                message: getPreviewPluginTrad("error.previewUrl.notFound"),
+              });
             }
           } catch (_e) {
-            strapi.notification.error(
-              getPreviewPluginTrad("error.previewUrl.notFound")
-            );
+            strapi.notification.config({
+              type: "error",
+              message: getPreviewPluginTrad("error.previewUrl.notFound"),
+            });
           }
         },
         type: "button",
@@ -160,7 +162,10 @@ export const PreviewProvider = ({
         },
       });
 
-      strapi.notification.success(getPreviewPluginTrad("success.record.clone"));
+      strapi.notification.config({
+        type: "success",
+        message: getPreviewPluginTrad("success.record.clone"),
+      });
 
       window.location.replace(getFrontendEntityUrl(slug, clonedPayload.id));
     } catch (err) {
@@ -196,9 +201,10 @@ export const PreviewProvider = ({
         method: "DELETE",
       });
 
-      strapi.notification.success(
-        getPreviewPluginTrad("success.record.publish")
-      );
+      strapi.notification.config({
+        type: "success",
+        message: getPreviewPluginTrad("success.record.publish"),
+      });
       window.location.replace(getFrontendEntityUrl(slug, targetId));
     } catch (err) {
       const errorMessage = get(
@@ -206,7 +212,10 @@ export const PreviewProvider = ({
         "response.payload.message",
         formatMessage({ id: getPreviewPluginTrad("error.record.publish") })
       );
-      strapi.notification.error(errorMessage);
+      strapi.notification.config({
+        type: "error",
+        message: errorMessage,
+      });
     } finally {
       setButtonLoading(false);
       toggleWarningPublish();
