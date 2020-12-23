@@ -51,14 +51,11 @@ Copy the folder named `content-manager` inside your `<project-root>/extensions` 
 
 To enable content type to be previewable and see preview, or clone entry, you've to add option previewable to true in a configuration json file (`*.settings.json`):
 
-```json
+```diff
 {
-  {...}
   "options": {
-	{...}
-    "previewable": true
-  },
-  {...}
++    "previewable": true
+  }
 }
 ```
 
