@@ -1,12 +1,16 @@
 {
   "name": "strapi-plugin-preview-content",
-  "version": "0.2.72",
+  "version": "0.2.73",
   "description": "Preview your content with custom URL.",
   "main": "admin/main/index.js",
   "strapi": {
     "name": "Preview Content",
     "icon": "link",
     "description": "Preview your content with custom URL."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danestves/strapi-plugin-preview-content.git"
   },
   "files": [
     "admin",
