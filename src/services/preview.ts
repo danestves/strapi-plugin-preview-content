@@ -136,6 +136,9 @@ module.exports = {
   replacePreviewParams(contentType: string, contentId: string, url: string) {
     return url.replace(":contentType", contentType).replace(":id", contentId);
   },
+  /**
+   * Get settings of the plugin
+   */
   async getSettings() {
     // @ts-ignore
     return strapi
@@ -146,6 +149,9 @@ module.exports = {
       })
       .get();
   },
+  /**
+   * Update settings of the plugin
+   */
   async setSettings(value: any) {
     // @ts-ignore
     return strapi

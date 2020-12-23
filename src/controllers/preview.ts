@@ -57,35 +57,6 @@ module.exports = {
     ctx.send({ url: url || "" });
   },
   /**
-   * Create or update the current settings configuration
-   *
-   * @param ctx
-   */
-  async createOrUpdate(ctx: Context) {
-    // @ts-ignore
-    const data = ctx.request.body;
-    // @ts-ignore
-    const results = await strapi
-      .query("plugins::preview-content.settings")
-      .find({ _limit: 1 });
-    const entity: any = _.first(results) || null;
-
-    let entry: any;
-    if (!entity) {
-      // @ts-ignore
-      entry = await strapi
-        .query("plugins::preview-content.settings")
-        .create(data);
-    } else {
-      // @ts-ignore
-      entry = await strapi
-        .query("plugins::preview-content.settings")
-        .update({ id: entity.id }, data);
-    }
-
-    return entry;
-  },
-  /**
    * Get settings of the plugin
    */
   async getSettings(ctx: Context) {

@@ -10,6 +10,16 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 - `removed`: for deprecated features removed in this release
 - `fixed`: for any bug fixes
 
+## [0.2.7] - 2020-12-22
+
+### Added
+
+- Documentation in README, code of conduct
+
+### Removed
+
+- Function of `createdOrUpdate` not needed
+
 ## [0.2.6] - 2020-12-22
 
 ### Added
