@@ -10,6 +10,23 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 - `removed`: for deprecated features removed in this release
 - `fixed`: for any bug fixes
 
+## [0.2.74] - 2020-12-22
+
+### Added
+
+- Optimized images
+- `min-width` for Preview button
+
+### Changed
+
+- Metadata for `package.json`
+
+### Fixed
+
+- Diff in README
+- Links in docs
+- Imafes not showing in npmjs
+
 ## [0.2.7] - 2020-12-22
 
 ### Added

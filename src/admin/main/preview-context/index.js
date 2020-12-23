@@ -94,6 +94,7 @@ export const PreviewProvider = ({
           paddingLeft: 15,
           paddingRight: 15,
           fontWeight: 600,
+          minWidth: 100,
         },
       });
 
