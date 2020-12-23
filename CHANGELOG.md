@@ -10,6 +10,12 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 - `removed`: for deprecated features removed in this release
 - `fixed`: for any bug fixes
 
+## [0.2.6] - 2020-12-22
+
+### Added
+
+- `strapi-files` to integrate in the project
+
 ## [0.2.56] - 2020-12-22
 
 ### Added
