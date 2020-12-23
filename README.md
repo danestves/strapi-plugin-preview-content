@@ -13,11 +13,11 @@ A plugin for [Strapi Headless CMS](https://github.com/strapi/strapi) that provid
 
 This is what the plugin looks like when editing content:
 
-<img src="public/assets/example1.png" alt="Example of buttons in edit Content Type" />
+<img src="https://github.com/danestves/strapi-plugin-preview-content/blob/main/public/assets/example1.png?raw=true" alt="Example of buttons in edit Content Type" />
 
 This is what the plugin looks like when we are in list view:
 
-<img src="public/assets/example2.png" alt="Example of buttons in list view" />
+<img src="https://github.com/danestves/strapi-plugin-preview-content/blob/main/public/assets/example2.png?raw=true" alt="Example of buttons in list view" />
 
 ### 🖐 Requirements
 
@@ -43,7 +43,7 @@ yarn add strapi-plugin-preview-content
 
 Inside `strapi-files` we have a list of folders with the Strapi version, enter to the version that correspond with your installation, and you will see this files
 
-<img src="public/assets/folder.png" alt="Example of buttons in list view" />
+<img src="https://github.com/danestves/strapi-plugin-preview-content/blob/main/public/assets/folder.png?raw=true" alt="Example of buttons in list view" />
 
 Copy the folder named `content-manager` inside your `<project-root>/extensions` folder
 
@@ -75,7 +75,7 @@ yarn build && yarn develop
 
 Go to Settings > Preview Content
 
-<img src="public/assets/settings.png" alt="Preview Content Settings" />
+<img src="https://github.com/danestves/strapi-plugin-preview-content/blob/main/public/assets/settings.png?raw=true" alt="Preview Content Settings" />
 
 Here you can configure how your url for frontend preview, at the moment there are only two parameters
 
