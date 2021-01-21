@@ -1,12 +1,28 @@
 {
-  "plugin.name": "Vorschau des Inhalts",
-  "settings.form.previewUrl.description": "Erstellen Sie eine benutzerdefinierte Vorschau-URL, die in Ihrem Frontend verwendet werden soll",
-  "settings.form.previewUrl.label": "URL-Vorschau",
+  "containers.Edit.clone": "Duplizieren",
+  "containers.Edit.preview": "Vorschau",
+  "containers.Edit.publish": "Veröffentlichen",
+
+  "success.record.clone": "Dupliziert",
+  "error.record.clone": "Während dem Duplizieren des Eintrags ist ein Fehler aufgetreten.",
+  "success.record.publish": "Veröffentlicht",
+  "error.record.publish": "Während dem Veröffentlichen des Eintrags ist ein Fehler aufgetreten.",
+
+  "popUpWarning.warning.clone": "Das Duplizieren legt einen neuen Eintrag mit den selben Feldern an.",
+  "popUpWarning.warning.clone-question": "Willst du diesen Eintrag duplizieren?",
+  "popUpWarning.warning.publish": "Diesen Eintrag zu veröffentlichen wird den vorher duplizierten ersetzen (Änderungen werden automatisch auf dem Original-Eintrag angewendet)",
+  "popUpWarning.warning.publish-question": "Willst du diesen Eintrag wirklich veröffentlichen?",
+  
+  "plugin.name": "Vorschau von Inhalten",
+  "settings.form.previewUrl.description": "Gib eine benutzerdefinierte Vorschau-URL an, die in Ihrem Frontend verwendet werden soll",
+  "settings.form.previewUrl.label": "Vorschau-URL",
   "settings.form.previewUrl.available": "Verfügbare Parameter:",
   "settings.form.previewUrl.available.contentType": "Der abzufragende Inhaltstyp (in der URL erforderlich)",
   "settings.form.previewUrl.available.id": "Die abzufragende ID (in der URL erforderlich)",
-  "settings.form.previewUrl.example": "Example:",
+  "settings.form.previewUrl.example": "Beispiel:",
   "settings.header.label": "Vorschau von Inhalten - Einstellungen",
-  "settings.section.general.label": "GENERAL",
-  "settings.sub-header.label": "Konfigurieren Sie die Einstellungen für die Funktion der Vorschaueinstellungen"
+  "settings.section.general.label": "GENERELL",
+  "settings.sub-header.label": "Konfigurieren Sie die Einstellungen für die Funktion der Vorschaueinstellungen",
+  
+  "error.previewUrl.notFound": "Beim Abrufen der URL ist ein Fehler aufgetreten."
 }
