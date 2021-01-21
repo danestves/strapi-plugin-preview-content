@@ -10,6 +10,12 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 - `removed`: for deprecated features removed in this release
 - `fixed`: for any bug fixes
 
+## [0.2.75] - 2021-01-21
+
+### Changed
+
+- Updated existing and added missing German translations
+
 ## [0.2.74] - 2020-12-22
 
 ### Added
