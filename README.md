@@ -96,7 +96,7 @@ There are some functions that make all of this posible
 
 | function         | route                           | method | description                                                   | notes                                                                          |
 | ---------------- | ------------------------------- | ------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `isprevieweable` | `/is-previewable/:contentType`  | `GET`  | Get if preview services is active in the current current type |                                                                                |
+| `isPreviewable` | `/is-previewable/:contentType`  | `GET`  | Get if preview services is active in the current current type |                                                                                |
 | `findOne`        | `/:contentType/:id`             | `GET`  | Find a content type by id                                     | You may want to active this route as public to make request from your frontend |
 | `getPreviewUrl`  | `/preview-url/:contentType/:id` | `GET`  | Get preview url of content type                               |                                                                                |
 
