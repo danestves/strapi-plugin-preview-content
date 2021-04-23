@@ -9,6 +9,8 @@
   </a>
 </p>
 
+> **This plugin has been inspired by [VirtusLab](https://github.com/VirtusLab/) - [strapi-molecules/strapi-plugin-preview](https://github.com/VirtusLab/strapi-molecules/tree/master/packages/strapi-plugin-preview)**
+
 A plugin for [Strapi Headless CMS](https://github.com/strapi/strapi) that provides content preview to integrate with any frontend:
 
 This is what the plugin looks like when editing content:
@@ -94,11 +96,11 @@ And put the logic there to render content
 
 There are some functions that make all of this posible
 
-| function         | route                           | method | description                                                   | notes                                                                          |
-| ---------------- | ------------------------------- | ------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `isprevieweable` | `/is-previewable/:contentType`  | `GET`  | Get if preview services is active in the current current type |                                                                                |
-| `findOne`        | `/:contentType/:id`             | `GET`  | Find a content type by id                                     | You may want to active this route as public to make request from your frontend |
-| `getPreviewUrl`  | `/preview-url/:contentType/:id` | `GET`  | Get preview url of content type                               |                                                                                |
+| function        | route                           | method | description                                                   | notes                                                                          |
+| --------------- | ------------------------------- | ------ | ------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| `isPreviewable` | `/is-previewable/:contentType`  | `GET`  | Get if preview services is active in the current current type |                                                                                |
+| `findOne`       | `/:contentType/:id`             | `GET`  | Find a content type by id                                     | You may want to active this route as public to make request from your frontend |
+| `getPreviewUrl` | `/preview-url/:contentType/:id` | `GET`  | Get preview url of content type                               |                                                                                |
 
 ## Contributing
 
