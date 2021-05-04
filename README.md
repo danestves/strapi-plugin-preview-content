@@ -27,7 +27,8 @@ Complete installation requirements are exact same as for Strapi itself and can b
 
 **Supported Strapi versions**:
 
-- Strapi v3.4.x
+- Strapi v3.6.x only version v1.0.0
+- Strapi v3.4.x only version v0.2.76
 
 **We recommend always using the latest version of Strapi to start your new projects**.
 
