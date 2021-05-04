@@ -1,3 +1,9 @@
+#### 1.0.1 (2021-05-04)
+
+##### New Features
+
+* **docs:**  adding supported ([88ccaa5c](https://github.com/danestves/strapi-plugin-preview-content/commit/88ccaa5c35d4635d739445b765e6569ffefe812c))
+
 ## 1.0.0 (2021-05-04)
 
 ##### New Features
