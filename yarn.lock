@@ -1493,10 +1493,10 @@ split2@^2.2.0:
   dependencies:
     through2 "^2.0.2"
 
-strapi-helper-plugin@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/strapi-helper-plugin/-/strapi-helper-plugin-3.6.0.tgz#8ee2e73364c9a0f58feb8b7fcb71fd33b5d408d9"
-  integrity sha512-S+mNXqgd1fYkajQ/1fef0VH66q1STlv/YF0Tn4QO/79PzZB0BKV9J2XXXyrACF2ceicTx3w6bfURn73dwXS/yg==
+strapi-helper-plugin@^3.6.0:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/strapi-helper-plugin/-/strapi-helper-plugin-3.6.1.tgz#3f77b364a04022650b473f47bf355a93cf55de02"
+  integrity sha512-V+ukxNMDCNXovuWAG81+D9Gje7lTWOC5kMsYaFrB9916As98FKzWhWFj51tRQxUUrNleo/BP3B8UWaO/JGd0WQ==
   dependencies:
     "@buffetjs/core" "3.3.5"
     "@buffetjs/custom" "3.3.5"
@@ -1525,10 +1525,10 @@ strapi-helper-plugin@3.6.0:
     styled-components "^5.2.3"
     whatwg-fetch "^3.6.2"
 
-strapi-utils@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.6.0.tgz#0b608c95170dd2687d6ab93845cfa007d27d08d2"
-  integrity sha512-UgXejSAgOGKsN99c7B/dslV5UJTFIxHXYOKlKEomQWLvK3cUxqN4T9maUxbncyyMvZ/QIvUkyjRuRv71DndNbg==
+strapi-utils@^3.6.0:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.6.1.tgz#db6ef96b2db1e239ecc38ec61a2baec86d64da0d"
+  integrity sha512-ij26SXTOH/yLR59fKzaWEThjzQLOEhqTuZ6yBo0p6K5e7iRRcRbf5LI7263WL2rZXUOeqTwTyfvSTGg49odndQ==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "^2.19.0"
