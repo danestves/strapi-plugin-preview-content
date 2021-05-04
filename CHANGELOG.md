@@ -1,3 +1,12 @@
+#### 1.0.2 (2021-05-04)
+
+##### Documentation Changes
+
+*  update .all-contributorsrc [skip ci] ([be059e71](https://github.com/danestves/strapi-plugin-preview-content/commit/be059e71d2c131c17d775f3ee7cde3cbc9eaf8c5))
+*  update README.md [skip ci] ([9511baed](https://github.com/danestves/strapi-plugin-preview-content/commit/9511baed6ec5ac269a1a02ecdc39608fcf3a69c7))
+*  create .all-contributorsrc [skip ci] ([b3dc5499](https://github.com/danestves/strapi-plugin-preview-content/commit/b3dc54998e2dffb61245fcdaf8aee2f67bcf8bda))
+*  update README.md [skip ci] ([14beaa03](https://github.com/danestves/strapi-plugin-preview-content/commit/14beaa034ff848c1d7f74acd3da69d1fb804603e))
+
 #### 1.0.1 (2021-05-04)
 
 ##### New Features
