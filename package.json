@@ -22,7 +22,10 @@
     "build": "tsc",
     "prepublishOnly": "yarn build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "strapi-helper-plugin": "3.6.0",
+    "strapi-utils": "3.6.0"
+  },
   "author": {
     "name": "Daniel Esteves",
     "email": "estevesd8@gmail.com",
