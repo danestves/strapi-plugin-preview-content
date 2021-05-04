@@ -20,7 +20,10 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'feat(auto): updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'feat(auto): updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'feat(auto): updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
   },
   "dependencies": {
     "strapi-helper-plugin": "^3.6.0",
@@ -47,6 +50,7 @@
     "@types/koa": "^2.11.6",
     "@types/lodash": "^4.14.165",
     "@types/node": "^14.14.14",
+    "generate-changelog": "^1.8.0",
     "typescript": "^4.1.3"
   }
 }
