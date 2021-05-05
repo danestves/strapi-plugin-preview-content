@@ -202,7 +202,8 @@ const SettingsPage = () => {
                   color="#ffffff"
                   className="p-2 rounded"
                 >
-                  https://myexample.com/preview/:contentType/:id
+                  NextJS: {"<"}YOUR_URL{">"}
+                  /api/preview?contentType=:contentType&id=:id
                 </CodeBlock>
               </div>
             </div>

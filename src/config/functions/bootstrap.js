@@ -22,7 +22,7 @@ module.exports = async () => {
   if (!config) {
     await configurator.set({
       value: {
-        previewUrl: "",
+        previewUrl: "<YOUR_URL>/api/preview?contentType=:contentType&id=:id",
       },
     });
   }
