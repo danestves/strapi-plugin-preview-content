@@ -15,17 +15,12 @@ export default (strapi) => {
   const name = pluginPkg.strapi.name;
 
   const plugin = {
-    blockerComponent: null,
-    blockerComponentProps: {},
     description: pluginDescription,
     icon,
     id: pluginId,
     initializer: Initializer,
-    injectedComponents: [],
     isReady: false,
     isRequired: pluginPkg.strapi.required || false,
-    layout: null,
-    lifecycles,
     mainComponent: null,
     name,
     preventComponentRendering: false,
@@ -40,6 +35,10 @@ export default (strapi) => {
             name: "preview-content",
             to: `${strapi.settingsBaseURL}/preview-content`,
             Component: () => <SettingsPage />,
+            exact: false,
+            permissions: [
+              { action: "plugins::preview-content.read", subject: null },
+            ],
           },
         ],
       },
