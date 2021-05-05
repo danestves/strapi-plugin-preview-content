@@ -28,5 +28,6 @@ module.exports = async () => {
   }
 
   const { actionProvider } = global.strapi.admin.services.permission;
+
   await actionProvider.registerMany(actions);
 };

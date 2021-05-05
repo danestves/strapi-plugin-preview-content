@@ -38,7 +38,7 @@ export default (strapi) => {
             },
             name: "preview-content",
             to: `${strapi.settingsBaseURL}/preview-content`,
-            Component: SettingsPage,
+            Component: () => <SettingsPage />,
           },
         ],
       },
