@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3-alpha.2](https://github.com/danestves/strapi-plugin-preview-content/compare/v1.0.3-alpha.1...v1.0.3-alpha.2) (2021-05-05)
+
+
+### Bug Fixes
+
+* **dependencies:** putting react dependency ([1fdf315](https://github.com/danestves/strapi-plugin-preview-content/commits1fdf31566ca87c5fb0555bb0782907fbfb819647))
+
 ### [1.0.3-alpha.1](https://github.com/danestves/strapi-plugin-preview-content/compare/v1.0.3-alpha.0...v1.0.3-alpha.1) (2021-05-05)
 
 ### [1.0.3-alpha.0](https://github.com/danestves/strapi-plugin-preview-content/compare/v1.0.2...v1.0.3-alpha.0) (2021-05-05)
