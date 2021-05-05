@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3-alpha.0](https://github.com/danestves/strapi-plugin-preview-content/compare/v1.0.2...v1.0.3-alpha.0) (2021-05-05)
+
+
+### Bug Fixes
+
+* **compatibility:** files for strapi 3.6.1 ([aadb3a2](https://github.com/danestves/strapi-plugin-preview-content/commitsaadb3a2004c01a07bf5c74d6a0bb6c1a8bb24be5))
+* **compatibility:** files for strapi 3.6.1 ([0183d29](https://github.com/danestves/strapi-plugin-preview-content/commits0183d298f7051f1cca96a512a19df6f5e8a747eb))
+
 #### 1.0.2 (2021-05-04)
 
 ##### Documentation Changes
