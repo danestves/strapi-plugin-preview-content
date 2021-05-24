@@ -22,7 +22,8 @@ module.exports = async () => {
   if (!config) {
     await configurator.set({
       value: {
-        previewUrl: "<YOUR_URL>/api/preview?contentType=:contentType&id=:id",
+        baseUrl: "https://<YOUR_URL>.com",
+        previewUrl: ":baseUrl/api/preview?contentType=:contentType&id=:id",
       },
     });
   }

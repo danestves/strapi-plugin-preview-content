@@ -14,9 +14,12 @@
   "popUpWarning.warning.publish-question": "Are you sure you want to publish this entry?",
 
   "plugin.name": "Preview Content",
+  "settings.form.baseUrl.description": "The root url of your frontend. This can be used by custom and default preview urls.",
+  "settings.form.baseUrl.label": "Base url",
   "settings.form.previewUrl.description": "Create custom preview url to be used in your frontend",
-  "settings.form.previewUrl.label": "Preview url",
+  "settings.form.previewUrl.label": "Default Preview url",
   "settings.form.previewUrl.available": "Available parameters:",
+  "settings.form.previewUrl.available.baseUrl": "The root url as defined above",
   "settings.form.previewUrl.available.contentType": "The content type to query (required in the url)",
   "settings.form.previewUrl.available.id": "The id to query (required in the url)",
   "settings.form.previewUrl.example": "Example:",

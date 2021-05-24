@@ -4,9 +4,11 @@ const initialState = fromJS({
   isLoading: true,
   initialData: {
     previewUrl: "",
+    baseUrl: "",
   },
   modifiedData: {
     previewUrl: "",
+    baseUrl: "",
   },
 });
 
