@@ -16,20 +16,28 @@ Git clone your fork into `plugins/preview-content` of your development strapi pr
 
 To install its dependencies, head into the folder:
 
-```cd plugins/preview-content```
+```
+cd plugins/preview-content
+```
 
 and install:
 
-```yarn install```
+```
+yarn install
+```
 
 ## Step 5: Run your project with hot reload
 
 In the `plugins/preview-content` folder run:
 
-```yarn build -w```
+```
+yarn build -w
+```
 
 This will start the typescript compilation with automatic relaoding.
 
 After the first successful compilation, run strapi in the root of your project:
 
-```yarn develop --watch-admin```
+```
+yarn develop --watch-admin
+```
