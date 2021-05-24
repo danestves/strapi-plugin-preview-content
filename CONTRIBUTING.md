@@ -48,3 +48,7 @@ After the first successful compilation, run strapi in the root of your project:
 ```
 yarn develop --watch-admin
 ```
+
+# Development
+
+Be sure to only edit the files in `/plugins/preview-content/src`, as the other files are auto-generated and therefore not tracked.
