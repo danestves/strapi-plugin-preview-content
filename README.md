@@ -108,7 +108,7 @@ There are some functions that make all of this posible
 
 ## Contributing
 
-Feel free to fork and make a Pull Request to this plugin project. All the input is warmly welcome!
+Feel free to fork and make a Pull Request to this plugin project. All the input is warmly welcome! To learn how, head [here](/CONTRIBUTING.md)
 
 ## Community support
 
