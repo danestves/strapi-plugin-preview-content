@@ -39,7 +39,7 @@ module.exports = {
     const model = await global.strapi.query(contentType)?.model;
 
     if (model) {
-      return model.pluginOptions['preview-content'].previewable || model.options.previewable;
+      return model.pluginOptions?.['preview-content']?.previewable || model.options?.previewable;
     }
     throw new PreviewError(400, "Wrong contentType");
   },
