@@ -87,15 +87,17 @@ Go to Settings > Preview Content
 
 #### Base url
 
-Here you can configure the base url of your frontend. This is a seperate field because it will be different depending on if your project is running locally (e.g. `http://localhost:3000`) oder in production (e.g. `https://your-site.com`)
+Here you can configure the base url of your frontend. This is a seperate field because it will be different depending on whether your project is running locally (e.g. `http://localhost:3000`) oder in production (e.g. `https://your-site.com`).
 
 #### Default preview url
 
-The default preview url for when your content type doesn't have it's own url defined. For the default preview url there are three parameters provided by the plugin:
+This is the default preview url the plugin uses for when your content type doesn't have its own url defined. For the default preview url there are three parameters provided by this plugin:
 
-`:baseUrl` 
-`:contentType` The content type to query
-`:id` The id of content to query
+| Parameter       | Description                       |
+|-----------------|-----------------------------------|
+| `:baseUrl`      | See section above for explanation |
+| `:contentType`  | The content type to query         |
+| `:id`           | The id of content to query        | 
 
 For example in NextJS you can make use of [serverless functions](https://nextjs.org/docs/api-routes/introduction) to make an URL like this:
 
@@ -107,7 +109,7 @@ And put the logic there to render content.
 
 #### Custom preview url
 
-You can also provide a custom url in a model's `*.settings.json` for more flexibility. To do that, add this line to it's options:
+You can also provide a custom url per content type in its `*.settings.json`. To do so, add this line to its options:
 
 ```diff
 {
@@ -120,11 +122,11 @@ You can also provide a custom url in a model's `*.settings.json` for more flexib
 }
 ```
 
-Here you can see how the base url comes in handy: You cannot change your model for production, but you can change the base url in the settings.
+Here you can see how the base url comes in handy: You cannot change the model in production, but you can change the base url in the settings.
 
 #### Adding data to the url
 
-To tell the plugin to allow injecting data of the entry add the following to your model's `*.settings.json`:
+To tell the plugin to allow injection of an entry's data add the following to your model's `*.settings.json`:
 
 ```diff
 {
@@ -138,7 +140,7 @@ To tell the plugin to allow injecting data of the entry add the following to you
 }
 ```
 
-The plugin will now replace `<%= slug %>` and `<%= title %>` with the correct values. Make sure that you don't use names of attributes that don't exist, else you will get an error.
+The plugin will now replace `<%= slug %>` and `<%= title %>` with the correct values. What you put in the brackets (`<%=` `%>`) has to be a name of the an attribute.
 The syntax used here is [lodash's template syntax](https://lodash.com/docs/4.17.15#template).
 
 ### ✨ Features
