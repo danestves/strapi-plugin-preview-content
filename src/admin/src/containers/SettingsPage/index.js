@@ -2,9 +2,9 @@ import React, { useEffect, useReducer, useRef } from "react";
 import { Header, Inputs } from "@buffetjs/custom";
 import {
   LoadingIndicatorPage,
-  useGlobalContext,
   request,
 } from "strapi-helper-plugin";
+import { useIntl } from "react-intl";
 import { isEqual } from "lodash";
 
 import { getRequestUrl, getTrad } from "../../utils";
@@ -16,7 +16,7 @@ import init from "./init";
 import reducer, { initialState } from "./reducer";
 
 const SettingsPage = () => {
-  const { formatMessage } = useGlobalContext();
+  const { formatMessage } = useIntl();
   const [reducerState, dispatch] = useReducer(reducer, initialState, init);
   const { initialData, isLoading, modifiedData } = reducerState.toJS();
   const isMounted = useRef(true);
@@ -132,6 +132,20 @@ const SettingsPage = () => {
             <div className="col-12">
               <Inputs
                 label={formatMessage({
+                  id: getTrad("settings.form.baseUrl.label"),
+                })}
+                description={formatMessage({
+                  id: getTrad("settings.form.baseUrl.description"),
+                })}
+                name="baseUrl"
+                onChange={handleChange}
+                type="text"
+                value={modifiedData.baseUrl}
+              />
+            </div>
+            <div className="col-12">
+              <Inputs
+                label={formatMessage({
                   id: getTrad("settings.form.previewUrl.label"),
                 })}
                 description={formatMessage({
@@ -153,6 +167,23 @@ const SettingsPage = () => {
               <hr className="mt-0 mb-2" />
 
               <div>
+                <div className="d-flex py-2 align-items-center">
+                  <CodeBlock
+                    fontSize="md"
+                    color="#ffffff"
+                    className="p-2 rounded"
+                  >
+                    :baseUrl
+                  </CodeBlock>
+
+                  <Text fontSize="md" color="#787E8F" className="ml-2">
+                    {formatMessage({
+                      id: getTrad(
+                        "settings.form.previewUrl.available.baseUrl"
+                      ),
+                    })}
+                  </Text>
+                </div>
                 <div className="d-flex py-2 align-items-center">
                   <CodeBlock
                     fontSize="md"

@@ -39,7 +39,7 @@ module.exports = {
     const model = await global.strapi.query(contentType)?.model;
 
     if (model) {
-      return model.options.previewable;
+      return model.pluginOptions?.['preview-content']?.previewable || model.options?.previewable;
     }
     throw new PreviewError(400, "Wrong contentType");
   },
@@ -118,23 +118,43 @@ module.exports = {
     contentId: string,
     _query: Record<string, string | number>
   ) {
+    // @ts-ignore
+    const contentTypeModel = strapi.models[contentType]
+    const contentTypeConfig = contentTypeModel?.pluginOptions?.['preview-content'];
+
     const entity = await this.getSettings();
 
-    const previewUrl = entity.previewUrl || "";
+    const previewUrl = contentTypeConfig?.url || entity.previewUrl || "";
+    const baseUrl = entity.baseUrl || "";
 
-    return this.replacePreviewParams(contentType, contentId, previewUrl);
+    // Fetch data that needs to be put into the url (if enabled)
+    let additionalValues = {}
+    if (contentTypeConfig?.usesValuesInUrl) {
+      // Fetch the data
+      // @ts-ignore
+      additionalValues = await strapi.query(contentType).findOne({ id: contentId })
+    }
+
+    return this.replacePreviewParams(baseUrl, contentType, contentId, previewUrl, additionalValues);
   },
   /**
    * Replace URL from string params
    *
+   * @param - The root url of the project's frontend
    * @param - The content type to query
    * @param - The content type id to query
    * @param - The url string to replace
+   * @param - Additional data of the specific content type that needs to be injected into the url
    *
    * @returns The replaced URL
    */
-  replacePreviewParams(contentType: string, contentId: string, url: string) {
-    return url.replace(":contentType", contentType).replace(":id", contentId);
+  replacePreviewParams(baseUrl: string, contentType: string, contentId: string, url: string, additionalValues: object) {
+    return _.template(
+      url
+        .replace(":baseUrl", baseUrl)
+        .replace(":contentType", contentType)
+        .replace(":id", contentId)
+    )(additionalValues);
   },
   /**
    * Get settings of the plugin

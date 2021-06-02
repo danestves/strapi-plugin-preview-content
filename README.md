@@ -59,8 +59,10 @@ To enable content type to be previewable and see preview, or clone entry, you've
 
 ```diff
 {
-  "options": {
-+    "previewable": true
+  "pluginOptions": {
++    "preview-content": {
++      "previewable": true
++    }
   }
 }
 ```
@@ -83,16 +85,63 @@ Go to Settings > Preview Content
 
 <img src="https://github.com/danestves/strapi-plugin-preview-content/blob/main/public/assets/settings.png?raw=true" alt="Preview Content Settings" />
 
-Here you can configure how your url for frontend preview, at the moment there are only two parameters
+#### Base url
 
-`:contentType` The content type to query
-`:id` The id of content to query
+Here you can configure the base url of your frontend. This is a seperate field because it will be different depending on whether your project is running locally (e.g. `http://localhost:3000`) oder in production (e.g. `https://your-site.com`).
+
+#### Default preview url
+
+This is the default preview url the plugin uses for when your content type doesn't have its own url defined. For the default preview url there are three parameters provided by this plugin:
+
+| Parameter       | Description                       |
+|-----------------|-----------------------------------|
+| `:baseUrl`      | See section above for explanation |
+| `:contentType`  | The content type to query         |
+| `:id`           | The id of content to query        | 
 
 For example in NextJS you can make use of [serverless functions](https://nextjs.org/docs/api-routes/introduction) to make an URL like this:
 
-`http://localhost:3000/api/preview/:contentType/:id`
+`:baseUrl/api/preview/:contentType/:id`
 
-And put the logic there to render content
+With your base url being `http://localhost:3000`, for example.
+
+And put the logic there to render content.
+
+#### Custom preview url
+
+You can also provide a custom url per content type in its `*.settings.json`. To do so, add this line to its options:
+
+```diff
+{
+  "pluginOptions": {
+    "preview-content": {
+      "previewable": true,
++      "url": ":baseUrl/your-path/:contentType/:id?a-custom-param=true"
+    }
+  }
+}
+```
+
+Here you can see how the base url comes in handy: You cannot change the model in production, but you can change the base url in the settings.
+
+#### Adding data to the url
+
+To tell the plugin to allow injection of an entry's data add the following to your model's `*.settings.json`:
+
+```diff
+{
+  "pluginOptions": {
+    "preview-content": {
+      "previewable": true,
++      "url": ":baseUrl/your-path/:contentType/<%= slug %>?a-custom-param=<%= title %>",
++      "usesValuesInUrl": true
+    }
+  }
+}
+```
+
+The plugin will now replace `<%= slug %>` and `<%= title %>` with the correct values. What you put in the brackets (`<%=` `%>`) has to be a name of the an attribute.
+The syntax used here is [lodash's template syntax](https://lodash.com/docs/4.17.15#template).
 
 ### ✨ Features
 
