@@ -2,11 +2,7 @@
 
 ##### New Features
 
-* **docs:**  using generate instead of standard version ([a17a3b54](https://github.com/danestves/strapi-plugin-preview-content/commit/a17a3b54e1db28036f7ca7035204db53647ff632))
-
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+- **docs:** using generate instead of standard version ([a17a3b54](https://github.com/danestves/strapi-plugin-preview-content/commit/a17a3b54e1db28036f7ca7035204db53647ff632))
 
 ### [1.2.1](https://github.com/danestves/strapi-plugin-preview-content/compare/v1.2.0...v1.2.1) (2021-06-02)
 
