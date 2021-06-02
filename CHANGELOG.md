@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 - Add ability to define a custom preview url for each content type
-- Add ability to use an the values of an entry's attributes in the url
+- Add ability to use any of the values of an entry's attributes in the url
 - Add a base url setting to avoid duplication between default preview url and custom ones
 
 ### Enhancements
