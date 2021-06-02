@@ -2,15 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [Unreleased]
-
-### Features
-- Add ability to define a custom preview url for each content type
-- Add ability to use any of the values of an entry's attributes in the url
-- Add a base url setting to avoid duplication between default preview url and custom ones
-
-### Enhancements
-- Use `pluginOptions` on models to configure the plugin
+## [1.2.0](https://github.com/danestves/strapi-plugin-preview-content/compare/v1.1.1...v1.2.0) (2021-06-02)
 
 ### [1.1.1](https://github.com/danestves/strapi-plugin-preview-content/compare/v1.1.0...v1.1.1) (2021-05-05)
 
