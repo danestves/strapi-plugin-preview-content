@@ -118,7 +118,7 @@ module.exports = {
     contentId: string,
     _query: Record<string, string | number>
   ) {
-    //@ts-ignore
+    // @ts-ignore
     const contentTypeModel = strapi.models[contentType]
     const contentTypeConfig = contentTypeModel?.pluginOptions?.['preview-content'];
 
@@ -131,7 +131,7 @@ module.exports = {
     let additionalValues = {}
     if (contentTypeConfig?.usesValuesInUrl) {
       // Fetch the data
-      //@ts-ignore
+      // @ts-ignore
       additionalValues = await strapi.query(contentType).findOne({ id: contentId })
     }
 
