@@ -27,8 +27,8 @@
     "release:major": "standard-version --release-as major"
   },
   "dependencies": {
-    "strapi-helper-plugin": "^3.6.1",
-    "strapi-utils": "^3.6.1"
+    "strapi-helper-plugin": "^3.6.3",
+    "strapi-utils": "^3.6.3"
   },
   "author": {
     "name": "Daniel Esteves",
@@ -48,10 +48,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/koa": "^2.13.1",
-    "@types/lodash": "^4.14.168",
-    "@types/node": "^15.0.2",
+    "@types/koa": "^2.13.3",
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.6.2",
     "standard-version": "^9.3.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.2"
   }
 }
