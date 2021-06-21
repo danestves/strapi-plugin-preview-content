@@ -26,7 +26,7 @@ This is what the plugin looks like when we are in list view:
 
 ### 🖐 Requirements
 
-Complete installation requirements are exact same as for Strapi itself and can be found in the documentation under <a href="https://strapi.io/documentation/v3.x/installation/cli.html#step-1-make-sure-requirements-are-met">Installation Requirements</a>.
+Complete installation requirements are exact same as for Strapi itself and can be found in the documentation under <a href="https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/installation/cli.html#step-1-make-sure-requirements-are-met">Installation Requirements</a>.
 
 **Supported Strapi versions**:
 
