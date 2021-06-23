@@ -1,3 +1,15 @@
+#### 1.3.1 (2021-06-23)
+
+##### Documentation Changes
+
+*  update .all-contributorsrc [skip ci] ([07a08ab5](https://github.com/danestves/strapi-plugin-preview-content/commit/07a08ab591e3e14bb26463ae778adc0ea1d14f99))
+*  update README.md [skip ci] ([513d5109](https://github.com/danestves/strapi-plugin-preview-content/commit/513d510992f1236180af69c16f789afb11d96efa))
+
+##### Bug Fixes
+
+*  pass apiID to CustomTable to show preview button in list view ([9e358202](https://github.com/danestves/strapi-plugin-preview-content/commit/9e358202ed8f13fd4c1ebab443cc9a6f0ee07723))
+* **docs:**  deleting custom code from changelog ([4136aeb5](https://github.com/danestves/strapi-plugin-preview-content/commit/4136aeb527ffab51a062b6a1bdde4c401bd6bed5))
+
 ### 1.3.0 (2021-06-02)
 
 ##### New Features
