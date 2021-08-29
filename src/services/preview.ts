@@ -36,7 +36,11 @@ module.exports = {
    * @returns - Returns inf content type is previewable
    */
   async isPreviewable(contentType: string) {
-    const model = await global.strapi.query(contentType)?.model;
+    // check if the wanted content-type belongs to a plugin, then queries the db providing the right scope
+    const pluginEntry = Object.entries<any>(global.strapi.plugins).find(([_, plugin]) => contentType in plugin.models);
+    const pluginName = pluginEntry && pluginEntry[0];
+
+    const model = await global.strapi.query(contentType, pluginName)?.model;
 
     if (model) {
       return model.pluginOptions?.['preview-content']?.previewable || model.options?.previewable;
